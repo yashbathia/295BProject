@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Crown - premium responsive admin template for backend systems</title>
+<link href="/static/css/registration.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/spinner/jquery.mousewheel.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/forms/uniform.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/chosen.jquery.min.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/wizard/jquery.form.js"></script>
+<script type="text/javascript" src="/static/js/plugins/wizard/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/wizard/jquery.form.wizard.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="/static/js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="/static/js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="/static/js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/tables/datatable.js"></script>
+<script type="text/javascript" src="/static/js/plugins/tables/tablesort.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/tables/resizable.min.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.sourcerer.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/jquery.fullcalendar.js"></script>
+<script type="text/javascript" src="/static/js/plugins/jquery.elfinder.js"></script>
+
+<script type="text/javascript" src="/static/js/custom.js"></script>
+
+</head>
+
+<body>
+        <!-- Main content wrapper -->
+    <div class="wrapper">
+    <br />
+    <br />
+        <!-- Validation form -->
+        <form id="validate" class="form" method="post" action="">
+        	<fieldset>
+                <div class="widget">
+                    <div class="title"><img src="/static/images/icons/dark/alert.png" alt="" class="titleIcon" /><h6>New User - Advertiser Registration</h6></div>
+                    <div class="formRow">
+                        <label>Tenant Name:<span class="req">*</span></label>
+                        <div class="formRight"><input type="text" class="validate[required]" name="req" id="req"/></div>
+                    </div>
+                    <div class="formRow">
+                        <label>Business URL:</label>
+                        <div class="formRight"><input type="text" class="required" name="urlField" id="urlField"/></div>
+                    </div>
+                    <div class="formRow">
+                        <label>Email:<span class="req">*</span></label>
+                            <div class="formRight"><input type="text" value="" class="validate[required,custom[email]]" name="emailValid" id="emailValid"/></div>
+                    </div>
+                    <div class="formRow">
+                        <label>Password:<span class="req">*</span></label>
+                        <div class="formRight"><input type="password" class="validate[required]" name="password1" id="password1" /></div>
+                    </div>
+                    <div class="formRow">
+                        <label>Confirm password:<span class="req">*</span></label>
+                        <div class="formRight"><input type="password" class="validate[required,equals[password1]" name="password2" id="password2" /></div>
+                    </div>
+                    <div class="formRow">
+                    <label>Security Question:<span class="req">*</span></label>
+                    <div class="formRight">
+                        <select name="selectReq" id="selectReq" class="validate[required]" >
+                            <option value="">First pet's name?</option>
+                            <option value="opt2">Mother's maiden name?</option>
+                            <option value="opt3">Favorite color?</option>
+                        </select>
+                	</div>
+                    </div>
+                    <div class="formRow">
+                        <label>Security Answer:<span class="req">*</span></label>
+                        <div class="formRight"><input type="text" class="validate[required]" name="req" id="req"/></div>
+                    </div>
+                    
+                    <div class="formSubmit"><input type="submit" value="submit" class="redB" /></div>
+                </div>
+                
+            </fieldset>
+        </form> 
+        <br />
+        <br />       
+        
+    </div>
+    
+   
+
+</div>
+
+</body>
+</html>

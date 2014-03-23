@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Advertiser-Event Promotion Insight Portal</title>
+<link href="/static/css/main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/spinner/jquery.mousewheel.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/forms/uniform.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/forms/chosen.jquery.min.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/wizard/jquery.form.js"></script>
+<script type="text/javascript" src="/static/js/plugins/wizard/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/wizard/jquery.form.wizard.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="/static/js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="/static/js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="/static/js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/tables/datatable.js"></script>
+<script type="text/javascript" src="/static/js/plugins/tables/tablesort.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/tables/resizable.min.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="/static/js/plugins/ui/jquery.sourcerer.js"></script>
+
+<script type="text/javascript" src="/static/js/plugins/jquery.fullcalendar.js"></script>
+<script type="text/javascript" src="/static/js/plugins/jquery.elfinder.js"></script>
+
+<script type="text/javascript" src="/static/js/custom.js"></script>
+
+</head>
+
+<body class="nobg loginPage">
+
+<!-- Top fixed navigation -->
+<div class="topNav">
+    <div class="navWrapper">
+        <div class="userNav">
+            <ul>
+            	<li><a href="#" title=""><img src="/static/images/icons/light/joomla.png" alt="" /><span>Welcome</span></a></li>
+                <li><a href="#" title=""><img src="/static/images/icons/light/addressBook.png" alt="" /><span>About</span></a></li>
+                <li><a href="#" title=""><img src="/static/images/icons/light/computer.png" alt="" /><span>Services</span></a></li>
+                <li><a href="#" title=""><img src="/static/images/icons/light/users.png" alt="" /><span>Contact Us</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="landingContent">
+    	<div class="landingText">
+		<h1 style="color:#FED7A0; font-size:26px; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif">Advertiser-Event Promotion Insight Portal</h1>
+        <p style="color:#FED7A0;">Where we plan to solve advertising frustrations, minimize uncertainty, maximize profits, and deliver<br /> comprehensive analysis to back our recommendations for your business.</p>
+        <p style="color:#69F ;">Real-time advice with real results...</p>
+        </div>
+        <div class="landingImage">
+        <img src=/static/images/backgrounds/AdvertisingLogo.png  alt="" />
+        </div>
+        <hr style="clear:both; visibility: hidden; background-color: #eaeef2; background-image: url(../static/images/backgrounds/loginBackground.png);
+ background-repeat:repeat-y;"/>
+    </div>
+</div>
+
+
+<!-- Main content wrapper -->
+<div class="loginArea">
+<div class="loginWrapper">
+    <div class="loginUserType">
+    	<input type="radio" name="advertiserLogin" value="advertiser"> <label for="advertiserLogin">I am an Advertiser</label><br>
+		<input type="radio" name="eventLogin" value="event"> <label for="eventLogin">I am an Event Organizer</label>
+    </div>
+    <div class="widget">
+        <div class="title"><img src="/static/images/icons/dark/locked2.png" alt="" class="titleIcon" /><h6>Login</h6></div>
+        <form action="index.html" id="validate" class="form">
+            <fieldset>
+                <div class="formRow">
+                    <label for="login">Username/Email:</label>
+                    <div class="loginInput"><input type="text" name="login" class="validate[required]" id="login" /></div>
+                </div>
+                
+                <div class="formRow">
+                    <label for="pass">Password:</label>
+                    <div class="loginInput"><input type="password" name="password" class="validate[required]" id="pass" /></div>
+                </div>
+                
+                <div class="loginControl">
+                    <div class="rememberMe"><input type="checkbox" id="remMe" name="remMe" /><label for="remMe">Remember me</label></div>
+                    <input type="submit" value="Sign in" class="dredB logMeIn" /><br />
+                    <span style="text-align:left; margin-top:3px; margin-right:2px;">Not registered?</span>
+                    <a href="advertiser_registration" style="text-align:left; ">Advertiser sign up</a><br />
+                    <a href="eventOrganizer_registration" style="text-align:left; margin-left: 90px; ">Event Organizer sign up</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div> 
+	<br />
+    <br />   
+</div>
+</body>
+</html>
